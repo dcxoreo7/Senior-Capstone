@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hubActivity">
+    tools:context=".hubActivity"
+    android:background="@drawable/hub_day">
 
     <Button
         android:id="@+id/resultsButton2"

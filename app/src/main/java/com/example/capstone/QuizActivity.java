@@ -81,9 +81,32 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
+    public void fifthQuestion(String previousInput){
+        results.add(previousInput);
+        mainText.setText("Do you prefer cooking at home or going out?");
+        buttonMain.setText("Home Cooking");
+        buttonMain2.setText("Restaurants");
+        buttonMain3.setText("Fast Food");
+        buttonMain4.setText("Anything works for me!");
+
+    }
+
+    public void sixthQuestion(String previousInput){
+        results.add(previousInput);
+        mainText.setText("Lastly, what is the price range you would spend on a meal?");
+        buttonMain.setText("5$ - 13$");
+        buttonMain2.setText("14$ - 21$");
+        buttonMain3.setText("22$ - 30$");
+        buttonMain4.setText("The amount doesnt matter for me");
+
+    }
+
 //    public void handleClick(View view) {
 //        secondQuestion("Breakfast");
 //    }
+
+
+        //resultsIntent.
 
     public void handleClick2(View view) {
         //secondQuestion("Lunch");
@@ -111,6 +134,18 @@ public class QuizActivity extends AppCompatActivity {
         }
         if (surveyCounter == 4) {
             results.add(buttonText);
+            fifthQuestion(buttonText);
+        }
+        if (surveyCounter == 5) {
+            results.add(buttonText);
+            sixthQuestion(buttonText);
+        }
+        if (surveyCounter == 6) {
+            results.add(buttonText);
+            //Referencing the hub page
+            Intent hubIntent = new Intent(this, hubActivity.class);
+            startActivity(hubIntent);
+
         }
 
     }

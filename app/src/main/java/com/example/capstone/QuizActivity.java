@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -144,11 +145,14 @@ public class QuizActivity extends AppCompatActivity {
             results.add(buttonText);
             //Referencing the hub page
             Intent hubIntent = new Intent(this, hubActivity.class);
+            hubIntent.putStringArrayListExtra("Results", results);
             startActivity(hubIntent);
 
         }
 
     }
+
+
 
     public void goToResults(View view){
         Log.i("results", results + " in goToResults method");
@@ -159,5 +163,9 @@ public class QuizActivity extends AppCompatActivity {
 
 
         //resultsIntent.
+    }
+
+    public ArrayList<String> getList(){
+        return this.results;
     }
 }

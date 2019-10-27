@@ -32,4 +32,9 @@ public class hubActivity extends AppCompatActivity {
 
         //resultsIntent.
     }
+
+    public void goToRewards(View view) {
+        Intent rewardsIntent = new Intent(this, RewardsActivity.class);
+        startActivity(rewardsIntent);
+    }
 }

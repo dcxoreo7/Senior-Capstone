@@ -54,7 +54,7 @@ public class QuizActivity extends AppCompatActivity {
 
     //Method to return 2nd Survey Questions
     public void secondQuestion(String previousInput){
-        results.add(previousInput);
+        results.add("\n" + previousInput);
         mainText.setText("Are you following a particular diet?");
         buttonMain.setText("Vegan");
         buttonMain2.setText("Vegetarian");
@@ -63,7 +63,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void thirdQuestion(String previousInput){
-        results.add(previousInput);
+        results.add("\n" + previousInput);
         mainText.setText("When do you have your first meal?");
         buttonMain.setText("Morning (7-10am)");
         buttonMain2.setText("Early Afternon (11-2pm)");
@@ -73,7 +73,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void fourthQuestion(String previousInput){
-        results.add(previousInput);
+        results.add("\n" + previousInput);
         mainText.setText("Are there any types of foods you prefer?");
         buttonMain.setText("American/Default");
         buttonMain2.setText("Mediterranean");
@@ -83,7 +83,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void fifthQuestion(String previousInput){
-        results.add(previousInput);
+        results.add("\n" + previousInput);
         mainText.setText("Do you prefer cooking at home or going out?");
         buttonMain.setText("Home Cooking");
         buttonMain2.setText("Restaurants");
@@ -93,7 +93,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void sixthQuestion(String previousInput){
-        results.add(previousInput);
+        results.add("\n" + previousInput);
         mainText.setText("Lastly, what is the price range you would spend on a meal?");
         buttonMain.setText("5$ - 13$");
         buttonMain2.setText("14$ - 21$");
@@ -134,15 +134,13 @@ public class QuizActivity extends AppCompatActivity {
             fourthQuestion(buttonText);
         }
         if (surveyCounter == 4) {
-            results.add(buttonText);
             fifthQuestion(buttonText);
         }
         if (surveyCounter == 5) {
-            results.add(buttonText);
             sixthQuestion(buttonText);
         }
         if (surveyCounter == 6) {
-            results.add(buttonText);
+            results.add(buttonText + "\n");
             //Referencing the hub page
             Intent hubIntent = new Intent(this, hubActivity.class);
             hubIntent.putStringArrayListExtra("Results", results);

@@ -38,7 +38,7 @@ public class Results extends AppCompatActivity {
         Log.i("results", results + " in onCreate method");
 
         textView = findViewById(R.id.mainText);
-        textView.setText("Results go here!" + results);
+        textView.setText("Food preference results" + "\n" + results);
     }
 
     public void save(View v) {

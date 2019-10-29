@@ -14,6 +14,7 @@ import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
 
+
     //TextViews
     private TextView mainText;
 
@@ -102,12 +103,6 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-//    public void handleClick(View view) {
-//        secondQuestion("Breakfast");
-//    }
-
-
-        //resultsIntent.
 
     public void handleClick2(View view) {
         //secondQuestion("Lunch");

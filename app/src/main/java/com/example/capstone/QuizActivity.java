@@ -95,11 +95,21 @@ public class QuizActivity extends AppCompatActivity {
 
     public void sixthQuestion(String previousInput){
         results.add("\n" + previousInput);
-        mainText.setText("Lastly, what is the price range you would spend on a meal?");
+        mainText.setText("What is the price range you would spend on a meal?");
         buttonMain.setText("5$ - 13$");
         buttonMain2.setText("14$ - 21$");
         buttonMain3.setText("22$ - 30$");
         buttonMain4.setText("The amount doesnt matter for me");
+
+    }
+
+    public void seventhQuestion(String previousInput){
+        results.add("\n" + previousInput);
+        mainText.setText("Lastly, how often do you excercise?");
+        buttonMain.setText("3+ times a week");
+        buttonMain2.setText("1-2 times a week");
+        buttonMain3.setText("A few times a month");
+        buttonMain4.setText("I don't excercise much");
 
     }
 
@@ -135,12 +145,14 @@ public class QuizActivity extends AppCompatActivity {
             sixthQuestion(buttonText);
         }
         if (surveyCounter == 6) {
+            seventhQuestion(buttonText);
+        }
+        if (surveyCounter == 7) {
             results.add(buttonText + "\n");
             //Referencing the hub page
             Intent hubIntent = new Intent(this, hubActivity.class);
             hubIntent.putStringArrayListExtra("Results", results);
             startActivity(hubIntent);
-
         }
 
     }

@@ -1,6 +1,7 @@
 package com.example.capstone;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
@@ -21,12 +22,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private ArrayList<String> mImages = new ArrayList<>();
     private Context mContext;
 
-    
+    public RecyclerViewAdapter(Context mContext, ArrayList<String> mImageNames, ArrayList<String> mImages) {
+        this.mImageNames = mImageNames;
+        this.mImages = mImages;
+        this.mContext = mContext;
+    }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem,parent, false);
+        ViewHolder holder = new ViewHolder(view);
+        return holder;
     }
 
     @Override

@@ -44,15 +44,15 @@ public class hubActivity extends AppCompatActivity {
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
         //ImageUrl's
-        mImageUrls.add("https://sanfrancisco.cbslocal.com/wp-content/uploads/sites/15116056/2013/07/fast-food.jpg?w=625");
-        mNames.add("Fast Food");
+//        mImageUrls.add("https://sanfrancisco.cbslocal.com/wp-content/uploads/sites/15116056/2013/07/fast-food.jpg?w=625");
+//        mNames.add("Fast Food");
 
         mImageUrls.add("https://www.supermarketnews.com/sites/supermarketnews.com/files/styles/article_featured_retina/public/Grocery_center_store_aisle_offcenter_0.png?itok=jYqbjNCZ");
         mNames.add("Grocery Shopping");
 
-        mImageUrls.add("https://static01.nyt.com/images/2017/11/05/magazine/05eat1/05eat1-articleLarge.jpg");
-        mNames.add("Breakfast Cooking");
-
+//        mImageUrls.add("https://static01.nyt.com/images/2017/11/05/magazine/05eat1/05eat1-articleLarge.jpg");
+//        mNames.add("Breakfast Cooking");
+//
         mImageUrls.add("https://i2.wp.com/wellplated.com/wp-content/uploads/2018/10/Healthy-Instant-Pot-Beef-Stew-600x764.jpg");
         mNames.add("Dinner Cooking");
 
@@ -63,11 +63,11 @@ public class hubActivity extends AppCompatActivity {
         mNames.add("Workout");
 
         mImageUrls.add("https://ae01.alicdn.com/kf/HTB1fNp_PFXXXXXVXVXXq6xXFXXXx/13-6cm-11-4cm-Fork-Knife-Plate-Vinyl-Car-Sticker-Car-Styling-Decal-Black-Silver-S3.jpg_q50.jpg");
-        mNames.add("Food logo");
+        mNames.add("Meal Prep");
 
         mImageUrls.add("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/food-recomended-on-low-carb-diet-or-ketogenic-diet-royalty-free-image-1013107176-1546025560.jpg?resize=480:*");
         mNames.add("Healthy Food");
-
+//
         mImageUrls.add("https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2011/08/main_dining_room_a_l.jpg");
         mNames.add("High End Restaurant");
 
@@ -94,4 +94,8 @@ public class hubActivity extends AppCompatActivity {
         Intent rewardsIntent = new Intent(this, RewardsActivity.class);
         startActivity(rewardsIntent);
     }
+
+    //NotebookBG source
+    //https://download.hipwallpaper.com/desktop/1600/900/57/21/EvN05x.jpg
+
 }

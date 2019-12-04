@@ -40,13 +40,13 @@
         android:id="@+id/myRecyclerView"
         android:layout_width="287dp"
         android:layout_height="614dp"
-        android:background="#009688"
+        android:background="@drawable/sketchbook_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.452"
-        tools:itemCount="9"
+        tools:itemCount="5"
         tools:listitem="@layout/recycler_view_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

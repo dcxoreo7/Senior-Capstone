@@ -85,3 +85,6 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+# text file to save and load answers
+/data/user/0/com.example.capstone/files/example.txt

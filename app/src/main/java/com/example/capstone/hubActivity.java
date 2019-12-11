@@ -75,9 +75,10 @@ public class hubActivity extends AppCompatActivity {
 
         initRecyclerView();
 
+//        int aNumb = 1;
 
-//        if (res.contains("Home Cooking")){
-//            Log.i("clickThis", " It didnt crash");
+//        if (!res.equals(null)){
+//            aNumb += 1;
 //        }
 
 //        mNames.set(0, "Not Available");
@@ -102,10 +103,6 @@ public class hubActivity extends AppCompatActivity {
         //resultsIntent.
     }
 
-    public void goToRewards(View view) {
-        Intent rewardsIntent = new Intent(this, RewardsActivity.class);
-        startActivity(rewardsIntent);
-    }
 
     //NotebookBG source
     //https://download.hipwallpaper.com/desktop/1600/900/57/21/EvN05x.jpg

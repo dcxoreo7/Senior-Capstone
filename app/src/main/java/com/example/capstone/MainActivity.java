@@ -82,10 +82,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void goToSettings(View view) {
-        Intent settingsIntent = new Intent(this, SettingsActivity.class);
-        startActivity(settingsIntent);
-    }
 
     public void goToHub(View view) {
         Intent hubIntent = new Intent(this, hubActivity.class);

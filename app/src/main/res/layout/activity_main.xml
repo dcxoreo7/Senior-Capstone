@@ -68,20 +68,6 @@
         app:layout_constraintVertical_bias="0.65" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="112dp"
-        android:layout_height="41dp"
-        android:background="#CDDC39"
-        android:onClick="goToSettings"
-        android:text="Settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
-
-    <Button
         android:id="@+id/button6"
         android:layout_width="108dp"
         android:layout_height="50dp"
@@ -89,24 +75,23 @@
         android:text="Results"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintVertical_bias="0.964" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="111dp"
         android:layout_height="57dp"
+        android:layout_marginStart="120dp"
         android:backgroundTint="#DF2136F3"
         android:onClick="goToHub"
         android:text="Hub"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/startButton"
-        app:layout_constraintVertical_bias="0.891" />
+        app:layout_constraintVertical_bias="0.865" />
 
     <TextView
         android:id="@+id/textView3"

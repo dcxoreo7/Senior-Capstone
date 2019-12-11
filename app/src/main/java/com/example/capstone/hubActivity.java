@@ -41,6 +41,8 @@ public class hubActivity extends AppCompatActivity {
     }
 
     private void initImageBitmaps(){
+
+
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
         //ImageUrl's
@@ -72,7 +74,17 @@ public class hubActivity extends AppCompatActivity {
         mNames.add("High End Restaurant");
 
         initRecyclerView();
+
+
+//        if (res.contains("Home Cooking")){
+//            Log.i("clickThis", " It didnt crash");
+//        }
+
+//        mNames.set(0, "Not Available");
+//        mImageUrls.set(0, "https://image.shutterstock.com/image-vector/not-available-grunge-rubber-stamp-260nw-549465907.jpg");
     }
+
+
 
     private void initRecyclerView(){
         Log.d(TAG, "initRecyclerView: init recyclerview.");
